@@ -50,9 +50,10 @@ body {
     text-decoration: none;
 }
 
-.portfolio {
+.subTitle {
     font-family: 'Nunito', sans-serif;
     font-size: .9rem;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -163,6 +164,11 @@ a:active {
 .content .text {
     font-size: .9rem;
     margin-top: .7rem;
+}
+
+.moreLink {
+    padding: 0 0 1rem 0;
+    font-style: italic;
 }
 
 .content a {
