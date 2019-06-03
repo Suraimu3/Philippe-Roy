@@ -196,6 +196,15 @@ a:active {
     padding: 0 10% 0 10%;
 }
 
+.gifSeparator {
+    margin: 0 0 3rem 0;
+}
+
+.mr-sm {
+    margin: 0 0 1rem 0;
+}
+
+
 .video {
     margin: auto;
     overflow: hidden;
