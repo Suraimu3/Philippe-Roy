@@ -169,16 +169,16 @@ a:active {
 video {
     margin: auto;
     overflow: hidden;
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: 75vw;
+    max-height: 75vh;
     height: auto;
 }
 
 .video {
     margin: auto;
     overflow: hidden;
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: 75vw;
+    max-height: 75vh;
     height: auto;
 }
 
@@ -186,8 +186,8 @@ video {
 .video object,
 .video embed {
     margin: auto;
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: 75vw;
+    max-height: 75vh;
     height: auto;
 
 }
