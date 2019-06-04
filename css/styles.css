@@ -140,8 +140,8 @@ a:active {
 
 .content img {
     border: 0;
-    max-width: 90vw;
-    max-height: 70vh;
+    max-width: 95vw;
+    max-height: 95vh;
 }
 
 .content imgBlock {
@@ -166,19 +166,30 @@ a:active {
     margin-bottom: 1rem;
 }
 
+video {
+    margin: auto;
+    overflow: hidden;
+    max-width: 95vw;
+    max-height: 95vh;
+    height: auto;
+}
+
 .video {
     margin: auto;
     overflow: hidden;
-    max-width: 90vw;
-    max-height: 70vh;
+    max-width: 95vw;
+    max-height: 95vh;
+    height: auto;
 }
 
 .video iframe,
 .video object,
 .video embed {
     margin: auto;
-    max-width: 90vw;
-    max-height: 70vh;
+    max-width: 95vw;
+    max-height: 95vh;
+    height: auto;
+
 }
 
 footer {
