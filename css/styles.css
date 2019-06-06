@@ -22,6 +22,37 @@ body {
 
 }
 
+#lightboxOverlay {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+#lightbox {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+.lb-outerContainer {
+    max-width: 97vw;
+    max-height: calc(97vw * (1/1));
+
+}
+
+.lb-dataContainer {
+    max-width: 97vw;
+    max-height: calc(97vw * (1/1));
+
+}
+
+#lightbox img {
+    max-width: 97vw;
+    max-height: calc(97vw * (1/1));
+}
+
 .container {
     display: grid;
     grid-template-columns: auto auto auto;

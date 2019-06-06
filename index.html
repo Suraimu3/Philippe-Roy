@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Comfortaa|Nunito" rel="stylesheet">
     <link rel="shortcut icon" href="images/philippe-roy-favicon-1.gif" />
+    <!-- Lightbox-->
+    <link type="text/css" href="css/lightbox.css" rel="stylesheet">
     <title>Philippe Roy - Portfolio</title>
 </head>
 
@@ -32,7 +34,7 @@
                 <li class="links">
                     <a href="interactive-design.html">Interactive Design</a>
                 </li>
-                
+
                 <li class="links">
                     <a href="videos.html">Videos</a>
                 </li>
@@ -66,5 +68,23 @@
 
         </footer>
     </div>
+    <!-- Lightbox JavaScript -->
+    <script type="text/javascript" src="js/lightbox.js"></script>
 
-</body></html>
+    <!-- Lightbox Options -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 0,
+            'fadeDuration': 0,
+            'disableScrolling': true,
+            'fitImagesInViewport': true,
+            'wrapAround': true,
+            'showImageNumberLabel': false,
+            'positionFromTop': 0
+        })
+
+    </script>
+
+</body>
+
+</html>
