@@ -8,69 +8,33 @@ ul {
     padding: 0;
 }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 body {
     background-color: white;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-
-}
-
-#lightboxOverlay {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    height: 100vh !important;
-    width: 100vw !important;
-}
-
-#lightbox {
-    position: fixed !important;
-    top: 50% !important;
-    transform: translateY(-50%);
-}
-
-.lb-outerContainer {
-    max-width: 97vw;
-    max-height: calc(97vw * (1/1));
-
-}
-
-.lb-dataContainer {
-    max-width: 97vw;
-    max-height: calc(97vw * (1/1));
-
-}
-
-#lightbox img {
-    max-width: 97vw;
-    max-height: calc(97vw * (1/1));
+    color: black;
+    padding: 0.8rem;
 }
 
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
-    grid-gap: .7rem;
+    grid-gap: .9rem;
     justify-items: center;
     align-items: start;
     justify-content: center;
     align-content: start;
-    padding: 1rem;
+}
 
-
+footer {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }
 
 .siteTitle {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-
 }
 
 .siteTitle a {
@@ -78,24 +42,25 @@ body {
     color: maroon;
     text-transform: uppercase;
     font-size: 2rem;
-    text-decoration: none;
-
+    line-height: 1.1rem;
 }
 
-
+.smaller {
+    font-size: 1.5rem;
+    text-transform: none;
+}
 
 .siteTitle a:hover {
-    color: skyblue;
+    color: lavender;
 }
 
 .linksContainer {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    flex-direction: row;
-
+    margin-bottom: 1.5rem;
 }
 
 .linksContainer .links {
@@ -103,17 +68,12 @@ body {
     border-bottom: solid .1rem lavender;
     font-size: 1rem;
     padding: .2rem;
-    margin: 0 .4rem .1rem;
+    margin: 0 .4rem;
     display: inline-block;
-
 }
 
 .linksContainer .links a {
     color: maroon;
-}
-
-.linksContainer .active {
-    border-bottom: solid .1rem maroon;
 }
 
 .linksContainer .links a:hover,
@@ -127,37 +87,38 @@ a:active {
     border-bottom: solid .1rem maroon;
 }
 
-
+.container .active {
+    border-bottom: solid .1rem maroon;
+}
 
 .content {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    color: black;
-    text-align: center;
-    margin: 1.5rem 0 0 0;
 }
 
 .artworkItem {
-    margin: 0 0 1.7rem 0;
+    margin-bottom: 2rem;
 }
 
-.artworkItem img {
-    margin: 0 0 0.5rem 0;
+.artworkItem img,
+.artworkItem video,
+.imgBlock,
+.otherMedia {
+    margin-bottom: 0.5rem;
+}
+
+.embedMedia {
+    margin-bottom: 1rem;
 }
 
 .artTitle {
     font-style: italic;
     font-size: .95rem;
+    margin-bottom: 0.5rem;
 }
 
-.content .text {
+.text {
     font-size: .9rem;
-    margin-top: .7rem;
-}
-
-.moreLink {
-    padding: 0 0 1rem 0;
-    font-style: italic;
 }
 
 .content a {
@@ -166,66 +127,48 @@ a:active {
 }
 
 .content a:hover {
-    color: purple;
+    color: lavender;
 }
 
 .content img {
     border: 0;
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: 97vw;
+    max-height: 97vh;
 }
 
-.content imgBlock {
+.content .imgBlock {
     margin-bottom: 2.3rem;
 }
 
 .aboutText {
     margin-bottom: 1rem;
-    padding: 0 10% 0 10%;
+
 }
 
 .gifSeparator {
-    margin: 0 0 3rem 0;
+    margin-bottom: 2rem;
 }
 
 .mr-sm {
-    margin: 0 0 1rem 0;
-}
-
-.welcome {
-    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 video {
-    margin: auto;
-    overflow: hidden;
     max-width: 75vw;
     max-height: 75vh;
-    height: auto;
 }
 
-.video {
-    margin: auto;
-    overflow: hidden;
-    max-width: 75vw;
-    max-height: 75vh;
-    height: auto;
+.vimeoVideoWrapper {
+    padding: 56.25% 0 0 0;
+    position: relative;
 }
 
-.video iframe,
-.video object,
-.video embed {
-    margin: auto;
-    max-width: 75vw;
-    max-height: 75vh;
-    height: auto;
-
-}
-
-footer {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+.vimeoIframeWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .copyright {
@@ -233,9 +176,5 @@ footer {
 }
 
 @media (min-width: 900px) {
-    .aboutText {
-
-        padding: 0 25% 0 25%;
-    }
-
+    .aboutText {}
 }
