@@ -13,7 +13,8 @@ body {
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: black;
-    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
@@ -25,6 +26,7 @@ body {
     align-items: start;
     justify-content: center;
     align-content: start;
+    padding: 1.2rem;
 }
 
 footer {
@@ -121,6 +123,10 @@ a:active {
     font-size: .9rem;
 }
 
+.projectHeader {
+    font-size: 1.5rem;
+}
+
 .content a {
     color: maroon;
     text-decoration: none;
@@ -132,8 +138,8 @@ a:active {
 
 .content img {
     border: 0;
-    max-width: 97vw;
-    max-height: 97vh;
+    max-width: 93vw;
+
 }
 
 .content .imgBlock {
@@ -142,7 +148,11 @@ a:active {
 
 .aboutText {
     margin-bottom: 1rem;
+    font-size: .84rem;
+}
 
+.aboutText span {
+    font-weight: bolder;
 }
 
 .gifSeparator {
@@ -154,8 +164,8 @@ a:active {
 }
 
 video {
-    max-width: 75vw;
-    max-height: 75vh;
+    max-width: 93vw;
+
 }
 
 .vimeoVideoWrapper {
@@ -175,6 +185,4 @@ video {
     font-size: .8rem;
 }
 
-@media (min-width: 900px) {
-    .aboutText {}
-}
+@media (min-width: 900px) {}
