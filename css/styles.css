@@ -193,4 +193,8 @@ a:active {
     font-size: .8rem;
 }
 
+footer a {
+    color: black;
+}
+
 @media (min-width: 900px) {}
