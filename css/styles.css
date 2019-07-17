@@ -153,6 +153,7 @@ a:active {
     margin-bottom: 1rem;
     font-size: .84rem;
     line-height: 1.7rem;
+    max-width: 960px;
 }
 
 .aboutText span {
