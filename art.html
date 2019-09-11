@@ -31,10 +31,13 @@
                 <li class="links">
                     <a href="photo.html">Photo</a>
                 </li>
+                <li class="links">
+                    <a href="interactive.html">Web/Interactive</a>
+                </li>
                 <li class="links active">
                     <a href="art.html">Art</a>
                 </li>
-               
+
                 <li class="links">
                     <a href="info.html">Info</a>
                 </li>
@@ -45,42 +48,42 @@
         </nav>
         <main class="content">
             <article class="artworkItem">
-                <img src="images/The_Jig_Is_Up-web.jpg" alt="The Jig Is Up">
+                <img class="jpg" src="images/The_Jig_Is_Up-web.jpg" alt="The Jig Is Up">
                 <p class="artTitle">The Jig Is Up</p>
                 <p class="text">Procreate</p>
             </article>
             <article class="artworkItem">
-                <img src="images/shop.jpg" alt="It's Open">
+                <img class="jpg" data-src="images/shop.jpg" src="images/placeholder.jpg" alt="It's Open">
                 <p class="artTitle">It's Open</p>
                 <p class="text">Photoshop</p>
             </article>
             <article class="artworkItem">
-                <img src="images/No_Name_Yamas-web.jpg" alt="No Name Yamas">
+                <img class="jpg" data-src="images/No_Name_Yamas-web.jpg" src="images/placeholder.jpg" alt="No Name Yamas">
                 <p class="artTitle">No Name Yamas</p>
                 <p class="text">Photoshop</p>
             </article>
             <article class="artworkItem">
-                <img src="images/Elven_Workshop-web.jpg" alt="No Name Yamas">
+                <img class="jpg" data-src="images/Elven_Workshop-web.jpg" src="images/placeholder.jpg" alt="No Name Yamas">
                 <p class="artTitle">Elven Workshop</p>
                 <p class="text">Photoshop</p>
             </article>
             <article class="artworkItem">
-                <img src="images/Whipped_Seeds-web.jpg" alt="Whipped Seeds">
+                <img class="jpg" data-src="images/Whipped_Seeds-web.jpg" src="images/placeholder.jpg" alt="Whipped Seeds">
                 <p class="artTitle">Whipped Seeds</p>
                 <p class="text">Photoshop</p>
             </article>
             <article class="artworkItem">
-                <img src="images/skibo-piper-final-web.jpg" alt="Skibo and Piper">
+                <img class="jpg" data-src="images/skibo-piper-final-web.jpg" src="images/placeholder.jpg" alt="Skibo and Piper">
                 <p class="artTitle">Skibo and Piper</p>
                 <p class="text">Charcoal on paper</p>
             </article>
             <article class="artworkItem">
-                <img src="images/DWOB-Bella_Portrait-web.jpg" alt="Bella Portrait">
+                <img class="jpg" data-src="images/DWOB-Bella_Portrait-web.jpg" src="images/placeholder.jpg" alt="Bella Portrait">
                 <p class="artTitle">Bella Portrait</p>
                 <p class="text">Charcoal on paper</p>
             </article>
             <article class="artworkItem">
-                <img src="images/DWOB-SMFA-Beacon_Hill_Rav4-web.jpg" alt="Beacon Hill Rav4">
+                <img class="jpg" data-src="images/DWOB-SMFA-Beacon_Hill_Rav4-web.jpg" src="images/placeholder.jpg" alt="Beacon Hill Rav4">
                 <p class="artTitle">Beacon Hill with Rav4, Boston</p>
                 <p class="text">Charcoal on paper</p>
             </article>
@@ -92,7 +95,15 @@
 
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".jpg"
+            // ... more custom settings?
+        });
 
+    </script>
 </body>
 
 </html>

@@ -35,6 +35,10 @@
                 <li class="links">
                     <a href="photo.html">Photo</a>
                 </li>
+                
+                <li class="links">
+                    <a href="interactive.html">Web/Interactive</a>
+                </li>
 
                 <li class="links">
                     <a href="art.html">Art</a>
@@ -53,7 +57,7 @@
         <main class="content">
 
             <article class="artworkItem videoWrapper">
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/345145121?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe class="vimeo" src="https://player.vimeo.com/video/345145121?byline=0&portrait=0" poster="images/placeholder-video.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
 
                 <p class="artTitle belowVideo">Macho Font</p>
@@ -63,7 +67,7 @@
 
             <article class="artworkItem videoWrapper">
 
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/340029632?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe class="vimeo" data-src="https://player.vimeo.com/video/340029632?byline=0&portrait=0" poster="images/placeholder-video.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
 
                 <p class="artTitle belowVideo">Music Video - Luke Abbott - Modern Driveway</p>
@@ -73,76 +77,81 @@
             </article>
 
             <article class="artworkItem">
-                <img src="images/E_Swipe-web.gif" alt="E Swipe">
+                <img class="jpg" data-src="images/E_Swipe-web.gif" src="images/placeholder.jpg" alt="E Swipe">
                 <p class="artTitle">E Swipe</p>
             </article>
 
             <article class="artworkItem">
-                <img src="images/CAUTION%20Eye%20Irritant-optim.gif" alt="CAUTION: Eye Irritant">
+                <img class="jpg" data-src="images/balancing-optim.gif" src="images/placeholder.jpg" alt="Balancing">
+                <p class="artTitle">Balancing</p>
+            </article>
+
+            <article class="artworkItem">
+                <img class="jpg" data-src="images/CAUTION%20Eye%20Irritant-optim.gif" src="images/placeholder.jpg" alt="CAUTION: Eye Irritant">
                 <p class="artTitle">CAUTION: Eye Irritant</p>
             </article>
 
             <article class="artworkItem">
-                <img src="images/Dolby-Boombox-v3-web.gif" alt="Dolby Boombox">
+                <img class="jpg" data-src="images/Dolby-Boombox-v3-web.gif" src="images/placeholder.jpg" alt="Dolby Boombox">
                 <p class="artTitle">Dolby Boombox</p>
             </article>
 
             <article class="artworkItem">
-                <img src="images/Dolby-Equalizer-v6-web.gif" alt="Dolby Equalizer">
+                <img class="jpg" data-src="images/Dolby-Equalizer-v6-web.gif" src="images/placeholder.jpg" alt="Dolby Equalizer">
                 <p class="artTitle">Dolby Equalizer</p>
             </article>
             <article class="artworkItem">
-                <img src="images/Dolby-TV-v4-web.gif" alt="Dolby TV">
+                <img class="jpg" data-src="images/Dolby-TV-v4-web.gif" src="images/placeholder.jpg" alt="Dolby TV">
                 <p class="artTitle">Dolby TV</p>
             </article>
             <article class="artworkItem">
-                <img src="images/Puma-Chill_Mode-web.gif" alt="Puma Chill Mode">
+                <img class="jpg" data-src="images/Puma-Chill_Mode-web.gif" src="images/placeholder.jpg" alt="Puma Chill Mode">
                 <p class="artTitle">Puma Chill Mode</p>
             </article>
 
             <article class="artworkItem">
-                <img src="images/Puma-Work_Mode.gif" alt="Puma Work Mode">
+                <img class="jpg" data-src="images/Puma-Work_Mode.gif" src="images/placeholder.jpg" alt="Puma Work Mode">
                 <p class="artTitle">Puma Work Mode</p>
             </article>
             <article class="artworkItem">
-                <img src="images/Puma-Weight_Lift_Team_Faster.gif" alt="Puma Work Mode">
+                <img class="jpg" data-src="images/Puma-Weight_Lift_Team_Faster.gif" src="images/placeholder.jpg" alt="Puma Work Mode">
                 <p class="artTitle">Puma Team Faster</p>
             </article>
 
             <article class="artworkItem">
-                <img src="images/Maxim_Baby_Announcement-web.gif" alt="Maxim Baby Announcement">
+                <img class="jpg" data-src="images/Maxim_Baby_Announcement-web.gif" src="images/placeholder.jpg" alt="Maxim Baby Announcement">
                 <p class="artTitle">Maxim Baby Announcement</p>
                 <p class="text">Illustration by Rollin McGrail</p>
             </article>
 
             <article class="artworkItem">
-                <img src="images/Maxim_Baby_Shower-optim.gif" alt="Maxim Baby Shower">
+                <img class="jpg" data-src="images/Maxim_Baby_Shower-optim.gif" src="images/placeholder.jpg" alt="Maxim Baby Shower">
                 <p class="artTitle">Maxim Baby Shower</p>
             </article>
 
             <article class="artworkItem directVideoWrapper">
-                <video class="mr-sm directVideo" loop autoplay muted controls>
-                    <source src="images/Chisholm_Gallery-Video_Ad-Group_3-v2.mp4" type="video/mp4">Your browser doesn't support playing this video.</video>
+                <video class="mr-sm directVideo mp4" data-src="images/Chisholm_Gallery-Video_Ad-Group_3-v2.mp4" loop autoplay muted controls>
+                    <source type="video/mp4" data-src="images/Chisholm_Gallery-Video_Ad-Group_3-v2.mp4">Your browser doesn't support playing this video.</video>
                 <p class="artTitle">Chisholm Gallery Ad</p>
             </article>
 
             <article class="artworkItem gifSeparator">
-                <img src="images/abstract-gif-3.gif" alt="abstract gif 3">
+                <img class="jpg" data-src="images/abstract-gif-3.gif" src="images/placeholder.jpg" alt="abstract gif 3">
                 <p class="artTitle"></p>
             </article>
 
             <article class="artworkItem gifSeparator">
-                <img src="images/The-Four-Winds.gif" alt="abstract gif 1">
+                <img class="jpg" data-src="images/The-Four-Winds.gif" src="images/placeholder.jpg" alt="abstract gif 1">
                 <p class="artTitle"></p>
             </article>
 
             <article class="artworkItem gifSeparator">
-                <img src="images/personal-work.gif" alt="abstract gif 5">
+                <img class="jpg" data-src="images/personal-work.gif" src="images/placeholder.jpg" alt="abstract gif 5">
                 <p class="artTitle"></p>
             </article>
 
             <article class="artworkItem gifSeparator">
-                <img src="images/Collisions-of-Moonlet-v2-Philipper.gif" alt="abstract gif 5">
+                <img class="jpg" data-src="images/Collisions-of-Moonlet-v2-Philipper.gif" src="images/placeholder.jpg" alt="abstract gif 5">
                 <p class="artTitle">Collisions of Moonlet</p>
             </article>
 
@@ -155,5 +164,22 @@
 
         </footer>
     </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".jpg"
+            // ... more custom settings?
+        });
+
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".mp4"
+            // ... more custom settings?
+        });
+
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".vimeo"
+            // ... more custom settings?
+        });
+    </script>
 </body></html>

@@ -178,6 +178,17 @@ a:active {
     margin-bottom: 1rem;
 }
 
+.message {
+    font-size: 0.8rem;
+    padding: .3rem .8rem;
+    color: darkmagenta;
+    display: inline-block;
+    border: 1px solid darkmagenta;
+    border-radius: 6px;
+    background-color: antiquewhite;
+
+}
+
 .directVideoWrapper {}
 
 .directVideo {
