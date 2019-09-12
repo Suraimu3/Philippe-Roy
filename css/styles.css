@@ -236,6 +236,13 @@ a:active {
 
 }
 
+.black {
+    background-color: black;
+    padding: 1rem 0 1rem 0;
+    width: 100vw;
+
+}
+
 .hrSeparator {
     border: 1.5px solid black;
     width: 100%;
